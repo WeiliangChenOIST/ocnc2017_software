@@ -1,8 +1,8 @@
 [Desktop Entry]
 Name=Terminal
-Exec=bash
+Exec=xfce4-terminal
 Icon=utilities-terminal
-Terminal=yes
+Terminal=no
 Type=Application
 Categories=Application;
 
