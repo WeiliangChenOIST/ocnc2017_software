@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Terminal
+Exec=bash
+Icon=utilities-terminal
+Terminal=yes
+Type=Application
+Categories=Application;
+
