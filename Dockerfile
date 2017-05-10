@@ -1,4 +1,4 @@
-# terminal: run --rm -it -d -p 5901:5901 -p 6901:6901 -v $(pwd):/headless/Docker_shared --user 1984 --name ocnc _vm ocnc_vm
+# terminal: docker run -it -d -p 5901:5901 -p 6901:6901 -e  VNC_RESOLUTION=1360x768 -v $(pwd):/headless/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
 # browser: http://localhost:6901/?password=vncpassword
 
 # start from ubuntu 16.04
