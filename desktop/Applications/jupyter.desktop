@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Jupyter Notebook
-Exec=bash -c 'cd $HOME/Documents/docker_shared && jupyter notebook'
+Exec=bash -c 'cd $HOME/Docker_shared && jupyter notebook'
 Icon=utilities-terminal
 Terminal=yes
 Type=Application

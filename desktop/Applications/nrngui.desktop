@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=NEURON
-Exec=xfce4-terminal  -e  "bash -c 'cd $HOME/Documents/docker_shared && nrngui -python'"
+Exec=xfce4-terminal  -e  "bash -c 'cd $HOME/Docker_shared && nrngui -python'"
 Icon=utilities-terminal
 Terminal=false
 Type=Application
