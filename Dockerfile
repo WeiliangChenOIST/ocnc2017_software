@@ -1,7 +1,7 @@
-# terminal: docker run -it -d -p 5901:5901 -p 6901:6901 -e  VNC_RESOLUTION=1360x768 -v $(pwd):/headless/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
+# terminal: docker run -it -d -p 5901:5901 -p 6901:6901 -e VNC_RESOLUTION=1360x768 -v $(pwd):/headless/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
 # browser: http://localhost:6901/?password=vncpassword
 
-# start from ubuntu 16.04
+# start from consol/ubuntu-xfce-vnc
 FROM consol/ubuntu-xfce-vnc:latest
 MAINTAINER Weiliang Chen “w.chen@oist.jp”
 
