@@ -1,14 +1,16 @@
 ## Docker image for OCNC 2017
 
+If you have any issue using the image please <a href="mailto:w.chen@oist.jp?Subject=OCNC2017%20docker%20issue" target="_top">email me</a>.
+
 # Installation
 
-1. Install Docker ([for macOS](https://docs.docker.com/docker-for-mac/), [Windows](https://docs.docker.com/docker-for-windows/), and [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntu/)).
+1. Install Docker ([for MacOS](https://docs.docker.com/docker-for-mac/), [Windows](https://docs.docker.com/docker-for-windows/), and [Ubuntu](https://docs.docker.com/engine/installation/linux/ubuntu/)).
 
 2. Start Docker.
 
 3. If you are using Windows, also [turn on drive sharing](https://rominirani.com/docker-on-windows-mounting-host-directories-d96f3f056a2c#.w4v0e42tn).
 
-4. Open a terminal (or CMD/PowerShell for Windows), choose or create a directory which you would like to share your data between your host system and the docker virtual system, for example `c:\docker_shared` (Windows) or `$HOME/docker_shared` (Mac/Linux), and go to the above directory
+4. Open a terminal (or cmd/PowerShell for Windows), choose or create a directory which you would like to share your data between your host system and the docker virtual system, for example `c:\docker_shared` (Windows) or `$HOME/docker_shared` (Mac/Linux), and go to the above directory
 
    (Windows)
    ```shell

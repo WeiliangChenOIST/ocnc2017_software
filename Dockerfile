@@ -40,8 +40,8 @@ RUN mkdir STEPS/build
 WORKDIR $HOME/srcs/STEPS/build
 RUN cmake -DCMAKE_INSTALL_PREFIX:PATH=$HOME/apps/conda .. && make -j 4 && make install
 
-# WORKDIR $HOME/srcs/
-# RUN rm -rf STEPS
+WORKDIR $HOME/srcs/
+RUN rm -rf STEPS
 
 # Install NEURON
 
@@ -67,6 +67,9 @@ RUN $HOME/apps/conda/bin/python setup.py install
 ENV PATH $HOME/apps/nrn/x86_64/bin:$PATH/iv/x86_64/bin:$PATH
 ENV LD_LIBRARY_PATH $PATH/nrn/x86_64/lib:$PATH/iv/x86_64/lib:$LD_LIBRARY_PATH
 
+WORKDIR $HOME/srcs
+RUN rm -rf iv-19 nrn-7.4
+
 # Install NEST
 
 USER 0
@@ -90,6 +93,9 @@ ENV NEST_MODULE_PATH=$NEST_INSTALL_DIR/lib/nest
 ENV NEST_PYTHON_PREFIX=$NEST_INSTALL_DIR/lib/python2.7/site-packages
 ENV PYTHONPATH=$NEST_PYTHON_PREFIX:$PYTHONPATH
 ENV PATH=$PATH:$NEST_INSTALL_DIR/bin
+
+WORKDIR $HOME/srcs
+RUN rm -rf nest-2.12.0
 
 # Install Brian2
 
