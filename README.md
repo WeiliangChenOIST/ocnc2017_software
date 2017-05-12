@@ -31,14 +31,8 @@ If you have any issue using the image please <a href="mailto:w.chen@oist.jp?Subj
    
 6. Initialize your own docker container (virtual system) with the image in a terminal. Note: Repeat this command will initialize another copy of the image system.
 
-    (Mac/Linux)
    ```shell
-   docker run -it -d -p 5901:5901 -p 6901:6901 -e  VNC_RESOLUTION=1360x768 -v $(pwd):/headless/Documents/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
-   ```
-   
-   (Windows PowerShell)
-   ```shell
-   docker run -it -d -p 5901:5901 -p 6901:6901 -e  VNC_RESOLUTION=1360x768 -v ${pwd}:/headless/Documents/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
+   docker run -it -d -p 5901:5901 -p 6901:6901 -e  VNC_RESOLUTION=1360x768 -v ${PWD}:/headless/Documents/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
    ```   
    
 # Use the system
@@ -63,13 +57,8 @@ If you have any issue using the image please <a href="mailto:w.chen@oist.jp?Subj
    ```
    then initialize a new one
    
-   (Mac/Linux)
    ```shell
-   docker run -it -d -p 5901:5901 -p 6901:6901 -e  VNC_RESOLUTION=1360x768 -v $(pwd):/headless/Documents/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
-   ```
-   (Windows PowerShell)
-   ```shell
-   docker run -it -d -p 5901:5901 -p 6901:6901 -e  VNC_RESOLUTION=1360x768 -v ${pwd}:/headless/Documents/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
+   docker run -it -d -p 5901:5901 -p 6901:6901 -e  VNC_RESOLUTION=1360x768 -v ${PWD}:/headless/Documents/Docker_shared --user 1984 --name ocnc_vm wchenoist/ocnc2017_software
    ```
 4. By default, the directory for initializing the docker container, e.g. `c:\docker_shared` (Windows) or `$HOME/docker_shared` (Mac/Linux), is mounted as `$HOME/Documents/Docker_shared` in the virtual system, anything put in this directory can be shared between the host and the virtual system.
 
