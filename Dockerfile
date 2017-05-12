@@ -105,9 +105,9 @@ RUN conda config --add channels brian-team && conda install  -y brian2 brian2too
 USER 0
 
 ADD desktop /headless/Desktop
-RUN chown -R 1984:1984 /headless/Desktop/Applications
 ADD preinstall_notebooks /headless/Documents/preinstall_notebooks
-RUN chown -R 1984:1984 /headless/Documents/preinstall_notebooks
+RUN chown -R 1984:1984 /headless/Documents
+RUN chown -R 1984:1984 /headless/Desktop
 
 USER 1984
 RUN chmod +x $HOME/Desktop/Applications/*.desktop
